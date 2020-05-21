@@ -33,6 +33,7 @@ let mc = new Hammer(box);
 // listen to events...
 mc.on("panright pandown", function(ev) {
     console.log(ev.type +" gesture detected.")
+    alert('ev.type +" gesture detected."')
     //myElement.textContent = ev.type +" gesture detected.";
 });
 
