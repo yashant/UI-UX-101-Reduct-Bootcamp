@@ -2,6 +2,8 @@ body{
     text-align: center;
     background-color: #F5FFF7;
     color: #006281;
+    overflow: hidden;
+
 }
 
 .start{
