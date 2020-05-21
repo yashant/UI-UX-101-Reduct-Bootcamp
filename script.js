@@ -54,5 +54,7 @@ function moveDown(){
 function checkCenter(){
     if (downPressed===true && rightPressed===true){
         document.querySelector(".level-button-hidden").style.display="inline";
+        document.querySelector(".reveal").style.display="inline-block";
+        
     }
 }

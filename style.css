@@ -5,7 +5,7 @@ body{
     overflow: hidden;
 
 }
-
+/* level 0 */
 .start{
     text-decoration: none;
     color: #006281;;
@@ -20,6 +20,7 @@ body{
     text-decoration: underline;
 }
 
+/* Level 1 */
 .block-square{
     margin:auto;
     text-align: left;
@@ -42,7 +43,12 @@ body{
     background: #006281;;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.62);
 }
+.reveal{
+    display: none;
+    margin-top:60px;
 
+}
+/* level 2 */
 .left-text{
     text-align: left;
 }
@@ -86,7 +92,7 @@ border-radius: 5px;
 }
 
 .submit-btn:disabled{
-    opacity: 0.8;
+    opacity: 0.7;
     margin-top : 40px; 
     color:#F5FFF7;
     font-size: 24px;
@@ -96,7 +102,7 @@ border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.62);
 }
 .submit-btn:enabled{
-    opacity: 0.8;
+    opacity: 0.7;
     margin-top : 40px; 
     color:#F5FFF7;
     font-size: 24px;

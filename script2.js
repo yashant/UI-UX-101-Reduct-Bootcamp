@@ -21,7 +21,7 @@ function fix(){
     
     if (three.childElementCount === 1){
     document.querySelector(".level-button-hidden").style.display="inline";
-    //document.querySelector('.left-text').style.textAlign="center";
-    }
+    document.querySelector(".reveal").style.display="inline-block";
+}
 
 }
