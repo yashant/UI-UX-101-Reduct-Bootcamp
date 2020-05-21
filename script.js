@@ -8,21 +8,12 @@ document.onkeydown = function(event) {
         switch (event.keyCode) {
            case 40:
             console.log("down key pressed");
-               box.style.display="flex";
-               box.style.alignItems="center";
-               downPressed = true; 
+            moveDown()
                break;
            case 39:
-                box.style.display="flex";
-                box.style.justifyContent="center";
-                rightPressed = true;
+            moveRight()
               break;     
         }
-
-        if (downPressed===true && rightPressed===true){
-            document.querySelector(".level-button-hidden").style.display="inline";
-        }
-
     };
 
 
@@ -33,7 +24,32 @@ let mc = new Hammer(box);
 // listen to events...
 mc.on("panright pandown", function(ev) {
     console.log(ev.type +" gesture detected.")
-    alert('ev.type +" gesture detected."')
+    if (ev.type==="panright"){
+        moveRight();
+    }
+    else if(ev.type==="pandown"){
+        moveDown();
+    }
     //myElement.textContent = ev.type +" gesture detected.";
 });
 
+
+function moveRight(){
+    box.style.display="flex";
+    box.style.justifyContent="center";
+    rightPressed = true;
+    checkCenter();
+}
+
+function moveDown(){
+    box.style.display="flex";
+    box.style.alignItems="center";
+    downPressed = true;
+    checkCenter();
+}
+
+function checkCenter(){
+    if (downPressed===true && rightPressed===true){
+        document.querySelector(".level-button-hidden").style.display="inline";
+    }
+}
