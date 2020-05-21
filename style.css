@@ -42,3 +42,23 @@ body{
     background: #006281;;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.62);
 }
+
+.left-text{
+    text-align: left;
+}
+
+.block-text{
+    width: 410px;
+    height: 150px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.less{
+    font-size: 24px;
+}
+
+.minus{
+    text-decoration: none;
+    cursor: pointer;
+}
