@@ -22,6 +22,9 @@ document.onkeydown = function(event) {
 let mc = new Hammer(box);
 
 // listen to events...
+mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+
+
 mc.on("panright pandown", function(ev) {
     console.log(ev.type +" gesture detected.")
     if (ev.type==="panright"){
