@@ -32,9 +32,18 @@ document.onkeyup = function(event) {
     if (upperCount === 3){
         pwdCapsOkay= true;
     }
+    else{
+        pwdCapsOkay= false;
+
+    }
     //console.log("caps ->"+pwdCapsOkay+ " illegal ->" +pwdIllegalChar+ "length ->" + pwdlengthOkay)
     if ((pwdIllegalChar===true) && (pwdlengthOkay===true) && (pwdCapsOkay===true)){
         document.querySelector(".submit-btn").disabled = false;
+    }
+    else
+    {
+        document.querySelector(".submit-btn").disabled = true;
+
     }
 
      
