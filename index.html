@@ -27,3 +27,23 @@
 
 </body>
 </html>
+<!-- 
+/* Smartphones ----------- */
+@media only screen and (max-width: 760px) {
+  #some-element { display: none; }
+}
+In jQuery/JavaScript file:
+
+$( document ).ready(function() {      
+    var is_mobile = false;
+
+    if( $('#some-element').css('display')=='none') {
+        is_mobile = true;       
+    }
+
+    // now i can use is_mobile to run javascript conditionally
+
+    if (is_mobile == true) {
+        //Conditional script here
+    }
+ }); -->
