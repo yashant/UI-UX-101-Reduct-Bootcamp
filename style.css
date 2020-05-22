@@ -1,8 +1,8 @@
 body{
+    padding:20px;
     text-align: center;
     background-color: #F5FFF7;
-    color: #006281;
-    overflow: hidden;
+    color: hsl(194, 100%, 25%);
 
 }
 /* level 0 */
@@ -110,4 +110,39 @@ border-radius: 5px;
     height: 53px;
     background: #006281;;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.62);
+}
+
+
+/* Level 4 */
+
+.alignment1{
+    line-height: 1.5;
+    text-align: left;
+    width: 420px;
+    margin:auto;
+}
+.alignment2{
+    line-height: 1.5;
+    text-align: left;
+    width: 420px;
+    margin:auto;
+}
+.alignment3{
+    line-height: 1.4;
+    text-align: left;
+    width: 420px;
+    margin:auto;
+}
+.tab{
+    margin-left: 10px;
+}
+
+.img-small{
+    margin:auto;
+    text-align: unset;
+    width: 200px;
+}
+
+.to-be-shown{
+    display: none;
 }
