@@ -74,10 +74,12 @@ body{
 /* Level 3 CSS */
 
 .text-input{
-color:hsl(194, 100%, 25%);
+padding: 10px;
+margin-bottom: 5px;
+color:rgb(66, 105, 116);
 width: 346px;
 height: 41px;
-font-size: 18px;
+font-size: 16px;
 background: #FFFFFF;
 border: 1px solid #006281;
 box-sizing: border-box;

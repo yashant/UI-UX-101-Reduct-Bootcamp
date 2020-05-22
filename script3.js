@@ -24,8 +24,8 @@ document.onkeyup = function(event) {
             pwdIllegalChar= false;
             break;
         }
-
-        if ((isNaN(pwdChar) && (pwdChar == pwdChar.toUpperCase()))) {
+        
+        if ((/^[a-zA-Z]+$/.test(pwdChar)) && (pwdChar == pwdChar.toUpperCase())){
             upperCount++;
         }
     }
